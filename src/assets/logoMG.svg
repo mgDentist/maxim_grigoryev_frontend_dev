@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap');
+        .initials {
+        font: bold 60px 'Montserrat', sans-serif;
+        dominant-baseline: central;
+        }
+        .letter-m { fill: #F0F0F0; }
+        .letter-g { fill: #61DAFB; }
+    </style>
+    <rect width="100" height="100" rx="20" fill="#242424" />
+    <text x="50" y="50" text-anchor="middle" class="initials">
+        <tspan class="letter-m">M</tspan>
+        <tspan class="letter-g" dx="-29">G</tspan>
+    </text>
+</svg>
