@@ -1,0 +1,13 @@
+.ooops {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__title {
+        font-size: 60px;
+    }
+
+    &__description {
+        font-size: 25px;
+    }
+}

@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import Projects from './Pages/Projects/Projects';
 import Contacts from './Pages/Contacts/Contacts';
+import NotFound from './Pages/NotFound/NotFound';
 
 import './App.css'
 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Main />}></Route>
         <Route path="/projects" element={<Projects />}></Route>
         <Route path="/contacts" element={<Contacts />}></Route>
-        {/* <Route path="*" element={NotFound}></Route> */}
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </div>
