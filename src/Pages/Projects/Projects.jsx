@@ -1,8 +1,13 @@
+import './Projects.scss';
+
 const Projects = () => {
     return (
-        <div className="main-container">
-            <h3>projects</h3>
-        </div>
+        <section className='projects'>
+            <div className="projects__container">
+                <h3>projects</h3>
+            </div>
+        </section>
+
     )
 }
 

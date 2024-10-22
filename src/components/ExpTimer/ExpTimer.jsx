@@ -33,8 +33,14 @@ const ExpTimer = () => {
             <p>
                 My experience in frontend development:&nbsp;
             </p>
-            <span>{elapsedTime.years} years, {elapsedTime.months} months, {elapsedTime.days} days,
-                {elapsedTime.hours} hours, {elapsedTime.minutes} minutes, {elapsedTime.seconds} seconds</span>
+            <span>
+                {elapsedTime.years} {elapsedTime.years < 2 ? 'year' : 'years'}, &nbsp;
+                {elapsedTime.months} {elapsedTime.months < 2 ? 'month' : 'months'}, &nbsp;
+                {elapsedTime.days} {elapsedTime.days < 2 ? 'day' : 'days'}, &nbsp;
+                {elapsedTime.hours} {elapsedTime.hours < 2 ? 'hour' : 'hours'}, &nbsp;
+                {elapsedTime.minutes} {elapsedTime.minutes < 2 ? 'minute' : 'minutes'}, &nbsp;
+                {elapsedTime.seconds} {elapsedTime.seconds < 2 ? 'second' : 'seconds'} &nbsp;
+            </span>
         </div>
     )
 };

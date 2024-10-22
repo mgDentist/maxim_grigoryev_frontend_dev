@@ -1,8 +1,12 @@
+import './Contacts.scss';
+
 const Contacts = () => {
     return (
-        <div className="main-container">
-            <h3>contacts</h3>
-        </div>
+        <section className="contacts">
+            <div className="contacts__container">
+                <h3>contacts</h3>
+            </div>
+        </section>
     )
 }
 
