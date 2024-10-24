@@ -29,4 +29,8 @@
 .nav {
     display: flex;
     gap: 50px;
+
+    a {
+        padding: 10px;
+    }
 }

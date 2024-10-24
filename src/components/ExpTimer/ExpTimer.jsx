@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 
+import DoubleDots from "../SVG/DoubleDots";
+
 import './ExpTimer.scss';
 
 const ExpTimer = () => {
     const [elapsedTime, setElapsedTime] = useState({});
+    const [isUpdated, setIsUpdated] = useState(false);
 
     useEffect(() => {
         const startDate = new Date('2023-01-16T00:00:00');
@@ -20,6 +23,7 @@ const ExpTimer = () => {
             const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
             setElapsedTime({ years, months, days, hours, minutes, seconds });
+            setIsUpdated(prev => !prev);
         };
 
         updateCounter(); // Initial update
@@ -29,18 +33,38 @@ const ExpTimer = () => {
     }, []);
 
     return (
-        <div className="timer__wrapper">
-            <p>
+        <div className="timer">
+            <h3 className="timer__title">
                 My experience in frontend development:&nbsp;
-            </p>
-            <span>
-                {elapsedTime.years} {elapsedTime.years < 2 ? 'year' : 'years'}, &nbsp;
-                {elapsedTime.months} {elapsedTime.months < 2 ? 'month' : 'months'}, &nbsp;
-                {elapsedTime.days} {elapsedTime.days < 2 ? 'day' : 'days'}, &nbsp;
-                {elapsedTime.hours} {elapsedTime.hours < 2 ? 'hour' : 'hours'}, &nbsp;
-                {elapsedTime.minutes} {elapsedTime.minutes < 2 ? 'minute' : 'minutes'}, &nbsp;
-                {elapsedTime.seconds} {elapsedTime.seconds < 2 ? 'second' : 'seconds'} &nbsp;
-            </span>
+            </h3>
+            <div className="timer-numbers">
+                <div className="timer-numbers__item timer-numbers__years">
+                    <p>{elapsedTime.years}</p>
+                    <span>{elapsedTime.years < 2 ? 'year' : 'years'}</span>
+                </div>
+                <div className="timer-numbers__item timer-numbers__months">
+                    <p>{elapsedTime.months}</p>
+                    <span>{elapsedTime.months < 2 ? 'month' : 'months'}</span>
+                </div>
+                <div className="timer-numbers__item timer-numbers__days">
+                    <p>{elapsedTime.days}</p>
+                    <span>{elapsedTime.days < 2 ? 'day' : 'days'}</span>
+                </div>
+                <div className="timer-numbers__item timer-numbers__hours">
+                    <p>{elapsedTime.hours}</p>
+                    <span>{elapsedTime.hours < 2 ? 'hour' : 'hours'}</span>
+                </div>
+                <DoubleDots className="timer-numbers__dots"/>
+                <div className="timer-numbers__item timer-numbers__minutes">
+                    <p>{elapsedTime.minutes}</p>
+                    <span>{elapsedTime.minutes < 2 ? 'minute' : 'minutes'}</span>
+                </div>
+                <DoubleDots className="timer-numbers__dots"/>
+                <div className="timer-numbers__item timer-numbers__seconds">
+                    <p>{elapsedTime.seconds}</p>
+                    <span>{elapsedTime.seconds < 2 ? 'second' : 'seconds'}</span>
+                </div>
+            </div>
         </div>
     )
 };
