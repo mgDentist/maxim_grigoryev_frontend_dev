@@ -1,11 +1,14 @@
 .stack-icons-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 11px;
     padding: 20px;
 }
 
 .icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transform: translateY(20px) scale(0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -17,5 +20,11 @@
 
     &:hover {
         transform: scale(1.5);
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

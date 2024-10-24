@@ -35,8 +35,8 @@ const StackIcons = () => {
                             rel="noopener noreferrer"
                         >
                             <img src={`/${icon.route}`}
-                                width='35'
-                                height='35'
+                                width='30'
+                                height='30'
                                 alt={icon.alt}
                             />
                         </a>

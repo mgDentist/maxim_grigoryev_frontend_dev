@@ -35,35 +35,44 @@ const ExpTimer = () => {
     return (
         <div className="timer">
             <h3 className="timer__title">
-                My experience in frontend development:&nbsp;
+                My experience in frontend development:
             </h3>
-            <div className="timer-numbers">
-                <div className="timer-numbers__item timer-numbers__years">
-                    <p>{elapsedTime.years}</p>
-                    <span>{elapsedTime.years < 2 ? 'year' : 'years'}</span>
-                </div>
-                <div className="timer-numbers__item timer-numbers__months">
-                    <p>{elapsedTime.months}</p>
-                    <span>{elapsedTime.months < 2 ? 'month' : 'months'}</span>
-                </div>
-                <div className="timer-numbers__item timer-numbers__days">
-                    <p>{elapsedTime.days}</p>
-                    <span>{elapsedTime.days < 2 ? 'day' : 'days'}</span>
-                </div>
-                <div className="timer-numbers__item timer-numbers__hours">
-                    <p>{elapsedTime.hours}</p>
-                    <span>{elapsedTime.hours < 2 ? 'hour' : 'hours'}</span>
-                </div>
-                <DoubleDots className="timer-numbers__dots"/>
-                <div className="timer-numbers__item timer-numbers__minutes">
-                    <p>{elapsedTime.minutes}</p>
-                    <span>{elapsedTime.minutes < 2 ? 'minute' : 'minutes'}</span>
-                </div>
-                <DoubleDots className="timer-numbers__dots"/>
-                <div className="timer-numbers__item timer-numbers__seconds">
-                    <p>{elapsedTime.seconds}</p>
-                    <span>{elapsedTime.seconds < 2 ? 'second' : 'seconds'}</span>
-                </div>
+            <div className="timer-numbers-wrapper">
+                <ul className="timer-numbers">
+                    <li className="timer-numbers__item timer-numbers__item--years">
+                        <p>{elapsedTime.years}</p>
+                        <span>{elapsedTime.years < 2 ? 'year' : 'years'}</span>
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--months">
+                        <p>{elapsedTime.months}</p>
+                        <span>{elapsedTime.months < 2 ? 'month' : 'months'}</span>
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--days">
+                        <p>{elapsedTime.days}</p>
+                        <span>{elapsedTime.days < 2 ? 'day' : 'days'}</span>
+                    </li>
+                </ul>
+
+                <ul className="timer-numbers timer-numbers__little">
+                    <li className="timer-numbers__item timer-numbers__item--hours">
+                        <p>{elapsedTime.hours}</p>
+                        <span>{elapsedTime.hours < 2 ? 'hour' : 'hours'}</span>
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--dots">
+                        <DoubleDots className={`timer-numbers__dots ${isUpdated ? 'updated' : ''}`} />
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--minutes">
+                        <p>{elapsedTime.minutes}</p>
+                        <span>{elapsedTime.minutes < 2 ? 'minute' : 'minutes'}</span>
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--dots">
+                        <DoubleDots className={`timer-numbers__dots ${isUpdated ? 'updated' : ''}`} />
+                    </li>
+                    <li className="timer-numbers__item timer-numbers__item--seconds">
+                        <p>{elapsedTime.seconds}</p>
+                        <span>{elapsedTime.seconds < 2 ? 'second' : 'seconds'}</span>
+                    </li>
+                </ul>
             </div>
         </div>
     )

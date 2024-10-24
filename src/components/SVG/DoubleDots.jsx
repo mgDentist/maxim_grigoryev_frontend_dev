@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const DoubleDots = ( { className }) => {
+const DoubleDots = ({ className }) => {
     return (
         <svg
             className={className}
