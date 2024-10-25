@@ -1,4 +1,4 @@
-import footerLinks from "../../DB/DB-stackIcons/DB-footerLinks";
+import footerLinks from "../../DB/DB-footerLinks";
 
 import './LinksFooter.scss';
 

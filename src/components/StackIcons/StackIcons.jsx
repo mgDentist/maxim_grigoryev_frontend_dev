@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import StackIconsDB from "../../DB/DB-stackIcons/DB-stackIcons";
+import StackIconsDB from "../../DB/DB-stackIcons";
 
 import './StackIcons.scss';
 
