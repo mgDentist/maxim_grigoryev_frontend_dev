@@ -22,7 +22,7 @@ const WebSitePreview = ({ url, alt, className }) => {
                 setError(null);
             }
             catch {
-                setError('failed to load preview');
+                setError('failed to load preview. Click here to view the site.');
             }
             finally {
                 setIsLoading(false);
@@ -40,7 +40,7 @@ const WebSitePreview = ({ url, alt, className }) => {
 
     if (error) {
         return (
-            <div>{error}</div>
+            <div className="loading">{error}</div>
         )
     }
 
