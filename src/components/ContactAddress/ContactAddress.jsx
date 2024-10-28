@@ -10,7 +10,7 @@ const ContactAddress = ({ className }) => {
                     <li
                         className=""
                         key={item.key}>
-                        <b>{item.label}:</b>
+                        <span><b>{item.label}:</b></span>
                         <span>{item.description}</span>
                     </li>
                 ))}
