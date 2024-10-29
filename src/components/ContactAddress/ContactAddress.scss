@@ -1,0 +1,36 @@
+.contacts-block {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    // &__item {}
+
+}
+
+.qr-code__container {
+    position: relative;
+    min-width: 400px;
+}
+
+.qr-code__img-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.btn {
+    background-color: aqua;
+    padding: 10px;
+    min-width: 135px;
+
+    &--clicked {
+        background-color: red;
+    }
+}
