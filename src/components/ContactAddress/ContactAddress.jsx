@@ -5,12 +5,10 @@ import './ContactAddress.scss';
 
 const ContactAddress = () => {
 
-    const [clicked, setClicked] = useState(false);
-    const [btnIndex, setBtnIndex] = useState(0)
+    const [activeQR, setActiveQR] = useState(null);
 
     const handleClick = (index) => {
-        setBtnIndex(index)
-        setClicked(prevState => !prevState);
+        setActiveQR((currentIndex) => (currentIndex === index ? null : index));
     };
 
     return (
@@ -37,22 +35,23 @@ const ContactAddress = () => {
                             rel="noopener noreferrer"
                         >{qr.name}</a>
                         <button
-                            className={`btn ${btnIndex === index ? "btn--clicked" : ""}`}
-                            onClick={() =>handleClick(index)}
+                            className={`btn ${activeQR === index ? "btn--clicked" : ""}`}
+                            onClick={() => handleClick(index)}
                         >
-                            {clicked ? "Hide QR code" : "Show QR code"}
+                            {activeQR === index ? "Hide QR code" : "Show QR code"}
                         </button>
 
-                        <div
-                            className="qr-code__img-container"
-                        >
-                            <img
-                                src={qr.route}
-                                width="300"
-                                height="400"
-                            ></img>
-                        </div>
-
+                        {activeQR === index && (
+                            <div
+                                className="qr-code__img-container"
+                            >
+                                <img
+                                    src={qr.route}
+                                    width="300"
+                                    height="400"
+                                ></img>
+                            </div>
+                        )}
                     </li>
                 ))}
             </ul>
