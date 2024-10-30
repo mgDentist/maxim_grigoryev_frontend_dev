@@ -41,17 +41,19 @@ const ContactAddress = () => {
                             {activeQR === index ? "Hide QR code" : "Show QR code"}
                         </button>
 
-                        {activeQR === index && (
+                        <div className="qr-code__img-container">
                             <div
-                                className="qr-code__img-container"
+                                className={`qr-code__img-wrapper ${activeQR === index ? 'qr-code__img-wrapper--visible' : ''
+                                    }`}
                             >
                                 <img
                                     src={qr.route}
                                     width="300"
                                     height="400"
-                                ></img>
+                                    alt={qr.alt}
+                                />
                             </div>
-                        )}
+                        </div>
                     </li>
                 ))}
             </ul>

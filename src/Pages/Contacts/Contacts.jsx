@@ -8,10 +8,9 @@ const Contacts = () => {
             <div className="contacts__container">
                 <h3>Hello, everybody!</h3>
                 <p>Here&apos;s all my contact information to stay in touch.</p>
+                <p>Feel free to reach out through any of these channels.</p>
 
                 <ContactAddress />
-
-                <p>Feel free to reach out through any of these channels.</p>
             </div>
         </section>
     )

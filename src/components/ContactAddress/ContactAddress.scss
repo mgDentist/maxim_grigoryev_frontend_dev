@@ -1,8 +1,9 @@
 .contacts-block {
-    padding: 20px;
+    min-width: 300px;
+    padding: 80px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 300px;
+    gap: 200px;
 
     &__list {
         display: flex;
@@ -10,27 +11,74 @@
         gap: 15px;
     }
 
-    // &__item {}
-
+    &__item {
+        display: flex;
+        gap: 10px;
+    }
 }
 
 .qr-code__container {
     position: relative;
     min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    li {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 30px;
+    }
+
+    a {
+        min-width: 80px;
+    }
 }
 
-.qr-code__img-container {
-    position: absolute;
-    top: 0;
-    right: 0;
+.qr-code {
+    &__img-container {
+        position: absolute;
+        top: -75px;
+        right: -195px;
+        overflow: hidden;
+
+        img {
+            border-radius: 40px;
+        }
+    }
+
+    &__img-wrapper {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.3s ease;
+        pointer-events: none; // Отключаем взаимодействие когда скрыто
+
+        &--visible {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+    }
 }
 
 .btn {
-    background-color: aqua;
+    background-color: #f0f0f0;
     padding: 10px;
+    color: #242424;
     min-width: 135px;
+    transition: all 0.3s ease;
 
     &--clicked {
-        background-color: red;
+        background-color: #61DAFB;
+        transform: scale(0.95);
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px #61DAFB;
+    }
+
+    &:active {
+        transform: scale(0.95);
     }
 }
