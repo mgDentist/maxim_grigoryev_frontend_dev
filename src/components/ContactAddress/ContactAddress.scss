@@ -3,7 +3,7 @@
     padding: 80px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 200px;
+    gap: 300px;
 
     &__list {
         display: flex;
@@ -18,11 +18,15 @@
 }
 
 .qr-code__container {
-    position: relative;
-    min-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+
+    ul {
+        position: relative;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
     li {
         display: flex;

@@ -19,45 +19,55 @@ const ContactAddress = () => {
                         className="contacts-block__item"
                         key={item.key}>
                         <span><b>{item.label}:</b></span>
-                        <span>{item.description}</span>
+                        {item.key === 'email' ?
+                            <a
+                                href="mailto:maxgrigorev.front@gmail.com"
+                                className="contacts-block__link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{item.description}</a> :
+                            <span>{item.description}</span>}
+
                     </li>
                 ))}
             </ul>
-
-            <ul className="qr-code__container">
-                {contactsQRs.map((qr, index) => (
-                    <li
-                        key={qr.name}
-                    >
-                        <a
-                            href={qr.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >{qr.name}</a>
-                        <button
-                            className={`btn ${activeQR === index ? "btn--clicked" : ""}`}
-                            onClick={() => handleClick(index)}
+            <div className="qr-code__container">
+                <ul >
+                    {contactsQRs.map((qr, index) => (
+                        <li
+                            key={qr.name}
                         >
-                            {activeQR === index ? "Hide QR code" : "Show QR code"}
-                        </button>
-
-                        <div className="qr-code__img-container">
-                            <p>You can see here my QR's</p>
-                            <div
-                                className={`qr-code__img-wrapper ${activeQR === index ? 'qr-code__img-wrapper--visible' : ''
-                                    }`}
+                            <a
+                                href={qr.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >{qr.name}</a>
+                            <button
+                                className={`btn ${activeQR === index ? "btn--clicked" : ""}`}
+                                onClick={() => handleClick(index)}
                             >
-                                <img
-                                    src={qr.route}
-                                    width="300"
-                                    height="400"
-                                    alt={qr.alt}
-                                />
+                                {activeQR === index ? "Hide QR code" : "Show QR code"}
+                            </button>
+
+                            <div className="qr-code__img-container">
+
+                                <div
+                                    className={`qr-code__img-wrapper ${activeQR === index ? 'qr-code__img-wrapper--visible' : ''
+                                        }`}
+                                >
+                                    <img
+                                        src={qr.route}
+                                        width="300"
+                                        height="400"
+                                        alt={qr.alt}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                ))}
-            </ul>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
         </div>
     )
 };
