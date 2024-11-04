@@ -8,3 +8,44 @@
     padding-left: 55px;
     padding-right: 55px;
 }
+
+.blog__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__pagination {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blog__buttons {
+    padding: 2px;
+    max-height: 30px;
+    min-width: 115px;
+
+    &--authorization {
+        min-width: auto;
+        color: #f0f0f0;
+        background-color: transparent;
+        border: none;
+
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #61DAFB;
+            box-shadow: none;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+.blog__authorization {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
