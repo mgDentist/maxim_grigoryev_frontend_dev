@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import Footer from './components/Footer/Footer';
 import Projects from './Pages/Projects/Projects';
 import Contacts from './Pages/Contacts/Contacts';
+import Blog from './Pages/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
 
 import './App.css'
@@ -15,10 +16,11 @@ function App() {
     <div className='container'>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/projects" element={<Projects />}></Route>
-        <Route path="/contacts" element={<Contacts />}></Route>
-        <Route path="*" element={<NotFound />}></Route>
+        <Route path="/" element={<Main />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
