@@ -14,11 +14,9 @@ const BlogHeader = () => {
                 ))}
             </div>
             <div className="blog__authorization">
-                <button
-                    className="btn blog__buttons--authorization"
+                <button className="btn blog__buttons--authorization"
                 >Login</button>
-                <button
-                    className="btn blog__buttons--authorization"
+                <button className="btn blog__buttons--authorization"
                 >Registration</button>
             </div>
         </div>
