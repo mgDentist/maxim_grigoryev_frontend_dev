@@ -1,0 +1,41 @@
+.blog__main {
+    padding: 100px 50px 100px 0;
+}
+
+.blog__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.blog__card {
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    color: #242424;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 15px #f0f0f0;
+    }
+}
+
+.blog__card-title {
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.blog__card-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+}
