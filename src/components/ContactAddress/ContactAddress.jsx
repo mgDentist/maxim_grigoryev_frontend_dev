@@ -5,7 +5,7 @@ import './ContactAddress.scss';
 
 const ContactAddress = () => {
 
-    const [activeQR, setActiveQR] = useState(null);
+    const [activeQR, setActiveQR] = useState(0);
 
     const handleClick = (index) => {
         setActiveQR((currentIndex) => (currentIndex === index ? null : index));
