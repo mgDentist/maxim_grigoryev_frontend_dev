@@ -3,7 +3,7 @@
     padding: 80px 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 300px;
+    gap: 180px;
 
     &__list {
         display: flex;
@@ -18,7 +18,8 @@
 }
 
 .qr-code__container {
-
+    border-left: 1px solid #61DAFB;
+    padding-left: 20px;
 
     ul {
         position: relative;
@@ -43,7 +44,7 @@
 .qr-code {
     &__img-container {
         position: absolute;
-        top: -75px;
+        top: -50%;
         right: -195px;
 
         img {
@@ -67,7 +68,7 @@
 
 .btn {
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 4px;
     color: #242424;
     min-width: 135px;
     transition: all 0.3s ease;
