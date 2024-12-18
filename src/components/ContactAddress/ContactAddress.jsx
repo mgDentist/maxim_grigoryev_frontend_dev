@@ -46,7 +46,7 @@ const ContactAddress = () => {
                                 className={`btn ${activeQR === index ? "btn--clicked" : ""}`}
                                 onClick={() => handleClick(index)}
                             >
-                                {activeQR === index ? "Hide QR code" : "Show QR code"}
+                                {activeQR === index ? "Hide QR" : "Show QR"}
                             </button>
 
                             <div className="qr-code__img-container">

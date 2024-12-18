@@ -2,11 +2,34 @@
     flex: 1 0 auto;
     padding-top: 15px;
     padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .blog__container {
     padding-left: 55px;
     padding-right: 55px;
+
+    h1 {
+        font-size: 40px;
+        color: transparent;
+        background-image: linear-gradient(90deg, #61dafb, #fff, #61dafb);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: colorShift 3s infinite linear;
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
 }
 
 .blog__header {
