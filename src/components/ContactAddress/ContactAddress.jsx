@@ -50,7 +50,6 @@ const ContactAddress = () => {
                             </button>
 
                             <div className="qr-code__img-container">
-
                                 <div
                                     className={`qr-code__img-wrapper ${activeQR === index ? 'qr-code__img-wrapper--visible' : ''
                                         }`}

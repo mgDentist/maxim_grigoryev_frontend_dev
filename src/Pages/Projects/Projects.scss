@@ -19,6 +19,7 @@
 }
 
 .projects__list {
+    width: 100%;
     padding-top: 30px;
     padding-left: 50px;
     display: flex;
@@ -59,12 +60,11 @@
     justify-content: space-between;
     gap: 100px;
 
-    ul {
+    >div {
         max-width: 420px;
         display: flex;
         flex-direction: column;
         align-items: start;
-        padding-top: 35px;
     }
 }
 
@@ -79,8 +79,6 @@
         height: 8px;
         left: 0;
         top: 8px;
-        // top: 50%;
-        // transform: translateY(-50%);
         background-color: #61DAFB;
         border-radius: 50%;
     }
@@ -91,6 +89,28 @@
     height: auto;
 
     animation: slideUp 20s ease infinite;
+}
+
+.projects__btn {
+    min-width: 145px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    padding-left: 0;
+    text-align: start;
+
+    &:hover {
+        color: #61DAFB;
+    }
+
+    &:active {
+        outline: none;
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 @keyframes slideUp {
