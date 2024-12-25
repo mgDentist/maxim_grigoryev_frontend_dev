@@ -36,14 +36,13 @@ const StackIcons = () => {
     return (
         <ul className="stack-icons-container">
             {StackIconsDB.map((icon) => (
-                <Tooltip
-                    disableInteractive
+                <li
                     key={icon.name}
-                    title={icon.name}>
-                    <li
-
-                        className={`icon-item ${visibleIcons.includes(icon.name) ? 'visible' : ''}`}
-                    >
+                    className={`icon-item ${visibleIcons.includes(icon.name) ? 'visible' : ''}`}
+                >
+                    <Tooltip
+                        disableInteractive
+                        title={icon.name}>
                         <a
                             href={icon.href}
                             target="_blank"
@@ -56,11 +55,10 @@ const StackIcons = () => {
                                 alt={icon.alt}
                             />
                         </a>
-                    </li>
-                </Tooltip>
-            ))
-            }
-        </ul >
+                    </Tooltip>
+                </li>
+            ))}
+        </ul>
     );
 };
 
