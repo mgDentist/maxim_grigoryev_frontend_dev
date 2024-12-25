@@ -11,10 +11,12 @@ const StackIconsDB = [
     { name: 'css', route: 'css.svg', alt: 'css', href: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
     { name: 'scss', route: 'scss.svg', alt: 'scss', href: 'https://sass-lang.com/' },
     { name: 'css modules', route: 'css-modules.svg', alt: 'css modules', href: 'https://github.com/css-modules/css-modules' },
+    { name: 'material ui', route: 'material-ui.svg', alt: 'material ui', href: 'https://mui.com/' },
     { name: 'git', route: 'git.svg', alt: 'git', href: 'https://git-scm.com/' },
     { name: 'github', route: 'github.svg', alt: 'github', href: 'https://github.com/' },
     { name: 'gitlab', route: 'gitlab.svg', alt: 'gitlab', href: 'https://gitlab.com/' },
     { name: 'figma', route: 'figma.svg', alt: 'figma', href: 'https://www.figma.com/' },
+    { name: 'pixso', route: 'pixso.svg', alt: 'pixso', href: 'https://pixso.net/' },
     { name: 'pug', route: 'pug.svg', alt: 'pug', href: 'https://pugjs.org/api/getting-started.html' },
 ];
 

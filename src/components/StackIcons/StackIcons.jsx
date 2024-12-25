@@ -8,6 +8,7 @@ import './StackIcons.scss';
 const StackIcons = () => {
     const [visibleIcons, setVisibleIcons] = useState([]);
     const [remainingIcons, setRemainingIcons] = useState([...StackIconsDB]); // Копия всех иконок
+    const ICONS_INTERVAL = 100; // Интервал между иконками (мс)
 
     useEffect(() => {
         const showRandomIcon = () => {
@@ -23,7 +24,7 @@ const StackIcons = () => {
 
                 // Рекурсивно запускаем показ следующей иконки
                 showRandomIcon();
-            }, 150); // Интервал между иконками (200 мс)
+            }, ICONS_INTERVAL); 
         };
 
         showRandomIcon(); // Запускаем первую итерацию
