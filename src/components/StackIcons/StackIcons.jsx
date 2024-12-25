@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import StackIconsDB from "../../DB/DB-stackIcons";
 
+import Tooltip from '@mui/material/Tooltip';
+
 import './StackIcons.scss';
 
 const StackIcons = () => {
@@ -34,25 +36,31 @@ const StackIcons = () => {
     return (
         <ul className="stack-icons-container">
             {StackIconsDB.map((icon) => (
-                <li
+                <Tooltip
+                    disableInteractive
                     key={icon.name}
-                    className={`icon-item ${visibleIcons.includes(icon.name) ? 'visible' : ''}`}
-                >
-                    <a
-                        href={icon.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    title={icon.name}>
+                    <li
+
+                        className={`icon-item ${visibleIcons.includes(icon.name) ? 'visible' : ''}`}
                     >
-                        <img
-                            src={`/${icon.route}`}
-                            width="30"
-                            height="30"
-                            alt={icon.alt}
-                        />
-                    </a>
-                </li>
-            ))}
-        </ul>
+                        <a
+                            href={icon.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={`/${icon.route}`}
+                                width="30"
+                                height="30"
+                                alt={icon.alt}
+                            />
+                        </a>
+                    </li>
+                </Tooltip>
+            ))
+            }
+        </ul >
     );
 };
 
