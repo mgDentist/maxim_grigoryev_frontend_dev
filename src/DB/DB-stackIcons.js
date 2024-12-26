@@ -3,6 +3,7 @@ const StackIconsDB = [
     { name: 'ts', route: 'ts.svg', alt: 'ts', href: 'https://www.typescriptlang.org/' },
     { name: 'react', route: 'reactJs.svg', alt: 'reactJS', href: 'https://react.dev/' },
     { name: 'redux', route: 'redux.svg', alt: 'redux', href: 'https://redux.js.org/' },
+    { name: 'node js', route: 'nodejs.svg', alt: 'node js', href: 'https://nodejs.org/en' },
     { name: 'vite', route: 'vite.svg', alt: 'vite', href: 'https://vite.dev/' },
     { name: 'webpack', route: 'webpack.svg', alt: 'webpack', href: 'https://webpack.js.org/' },
     { name: 'gulp', route: 'gulp.svg', alt: 'gulp', href: 'https://gulpjs.com/' },
