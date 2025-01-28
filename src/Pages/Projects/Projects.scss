@@ -93,12 +93,14 @@
 
 .projects__btn {
     min-width: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
     background-color: transparent;
-    border: none;
+    border: 1px solid #61DAFB;
     color: inherit;
     transition: all 0.3s ease;
-    padding-left: 0;
-    text-align: start;
 
     &:hover {
         color: #61DAFB;
