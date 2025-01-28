@@ -15,9 +15,10 @@ const Header = () => {
                 </div>
             </NavLink>
             <nav className='nav'>
-                <NavLink to='/projects'>My projects</NavLink>
+                <NavLink to='/my_path'>My Path</NavLink>
+                <NavLink to='/projects'>My Projects</NavLink>
                 <NavLink to='/contacts'>Contacts</NavLink>
-                <NavLink to='/blog'>Blog</NavLink>
+                {/* <NavLink to='/blog'>Blog</NavLink> */}
             </nav>
         </header>
     );

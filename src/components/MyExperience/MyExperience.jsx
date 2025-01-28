@@ -1,10 +1,13 @@
-import style from './MyExperience.module.scss';
+import style from '../UnderNda/UnderNda.module.scss';
 
 const MyExperience = () => {
     return (
-        <div className={style.ndaContainer}>
-            <h2>Here are my experience with projects <b className={style.ndaBoldText}>covered by NDA</b></h2>
-            <div className={style.ndaInnerContainer}>
+        <div
+        className={style.ndaContainer}
+        >
+            <div
+            className={style.ndaInnerContainer}
+            >
                 <h3>
                     <a href='https://ligaa.agency/'>Liga A</a>
                     &nbsp;— Intern (March 2024 – January 2025)
@@ -39,7 +42,9 @@ const MyExperience = () => {
                     </ul>
                 </div>
             </div>
-            <div className={style.ndaInnerContainer}>
+            <div
+            className={style.ndaInnerContainer}
+            >
                 <h3>
                     <span>Freelancer</span>
                     &nbsp;— Frontend Developer (March 2023 – Present)
@@ -59,7 +64,9 @@ const MyExperience = () => {
                     </ul>
                 </div>
             </div>
-            <div className={style.ndaInnerContainer}>
+            <div
+            className={style.ndaInnerContainer}
+            >
                 <h3>
                     <a href='https://htmlacademy.ru/'>HTML Academy</a>
                     &nbsp;— Student (January 2023 – January 2024)

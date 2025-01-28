@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import Tab from '@mui/material/Tab';
-import MyExperience from '../../components/MyExperience/MyExperience';
+import UnderNda from '../../components/UnderNda/UnderNda';
 import NoNda from '../../components/NoNda/NoNda';
 
 const Projects = () => {
@@ -68,7 +68,7 @@ const Projects = () => {
                         <TabPanel value="1"
                             sx={{ padding: "40px 0 0" }}
                         >
-                            <MyExperience />
+                            <UnderNda />
                         </TabPanel>
                     </TabContext>
                 </Box>
