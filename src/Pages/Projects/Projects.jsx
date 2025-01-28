@@ -1,90 +1,78 @@
-import { useState } from 'react';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import WebSitePreview from '../../components/WebSitePreview/WebSitePreview';
-import myProjects from '../../DB/DB-myProjects';
-
-import './Projects.scss';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import { TabContext, TabList, TabPanel } from '@mui/lab';
+import Tab from '@mui/material/Tab';
+import MyExperience from '../../components/MyExperience/MyExperience';
+import NoNda from '../../components/NoNda/NoNda';
 
 const Projects = () => {
-    const [expandedProjects, setExpandedProjects] = useState({});
+    const [value, setValue] = React.useState('0');
 
-    const toggleStack = (projectName) => {
-        setExpandedProjects((prev) => ({
-            ...prev,
-            [projectName]: !prev[projectName],
-        }));
-    };
-
-    const SHOWED_STACK_NUMBER = 8;
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    }
 
     return (
         <section className="projects">
             <div className="projects__container">
-                <h2 className="visually-hidden">My commercial projects</h2>
-                <h3>
-                    Here are my commercial projects available for public display <b>(not covered by NDA):</b>
-                </h3>
-                <ul className="projects__list">
-                    {myProjects.map((project) => {
-                        const isExpanded = expandedProjects[project.projectName] || false;
+                <Box sx={{ width: '100%', bgcolor: '#242424' }}>
+                    <TabContext value={value}
+                    >
+                        <Box sx={{ borderBottom: 1, borderColor: 'transparent' }}>
+                            <TabList onChange={handleChange} centered>
+                                <Tab label="No NDA projects" value="0"
+                                    sx={{
+                                        color: '#f0f0f0',
+                                        border: 'none',
+                                        '&.Mui-selected': {
+                                            color: '#61DAFB',
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                        '&:hover': {
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                        '&:focus': {
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                    }}
+                                />
+                                <Tab label="Under NDA projects" value="1"
+                                    sx={{
+                                        color: '#f0f0f0',
+                                        border: 'none',
+                                        '&.Mui-selected': {
+                                            color: '#61DAFB',
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                        '&:hover': {
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                        '&:focus': {
+                                            border: 'none',
+                                            outline: 'none',
+                                        },
+                                    }}
+                                />
+                            </TabList>
+                        </Box>
+                        <TabPanel value="0"
+                            sx={{ padding: "40px 0 0" }}
+                        >
+                            <NoNda />
+                        </TabPanel>
+                        <TabPanel value="1"
+                            sx={{ padding: "40px 0 0" }}
+                        >
+                            <MyExperience />
+                        </TabPanel>
+                    </TabContext>
+                </Box>
 
-                        return (
-                            <li className="projects__item" key={project.projectName}>
-                                <h4 className="projects__description">{project.projectName}</h4>
-                                <div className="projects__stack-wrapper">
-                                    <div>
-                                        {/* Анимация списка технологий */}
-                                        <TransitionGroup>
-                                            {project.stack
-                                                ?.slice(0, isExpanded ? undefined : SHOWED_STACK_NUMBER)
-                                                .map((technology) => (
-                                                    <CSSTransition
-                                                        key={technology}
-                                                        timeout={300}
-                                                        classNames="fade"
-                                                    >
-                                                        <div className="projects__tech">
-                                                            <p>{technology}</p>
-                                                        </div>
-                                                    </CSSTransition>
-                                                ))}
-                                        </TransitionGroup>
-
-                                        {/* Троеточие */}
-                                        {!isExpanded && project.stack?.length > SHOWED_STACK_NUMBER && (
-                                            <span className="projects__ellipsis">...</span>
-                                        )}
-
-                                        {/* Кнопка */}
-                                        {project.stack?.length > SHOWED_STACK_NUMBER && (
-                                            <button
-                                                className="projects__btn"
-                                                onClick={() => toggleStack(project.projectName)}
-                                                type="button"
-                                            >
-                                                {isExpanded ? 'Show less' : 'Show all stack'}
-                                            </button>
-                                        )}
-                                    </div>
-                                    <a
-                                        className="projects__link"
-                                        href={project.projectURL}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <div className="projects__img-container">
-                                            <WebSitePreview
-                                                className="projects__img"
-                                                url={project.projectURL}
-                                                alt={`screen shot of ${project.projectName}`}
-                                            />
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        );
-                    })}
-                </ul>
             </div>
         </section>
     );

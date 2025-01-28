@@ -4,7 +4,11 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 100px 55px 100px;
+    padding: 25px 55px 100px;
+
+    h2 {
+        text-align: start;
+    }
 
     p {
         text-align: start;
@@ -13,13 +17,13 @@
 }
 
 .projects__container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
 .projects__list {
-    width: 100%;
     padding-top: 30px;
     padding-left: 50px;
     display: flex;
