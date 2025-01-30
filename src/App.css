@@ -55,3 +55,9 @@ ul, ol {
   padding: 0;
   text-align: center;
 }
+
+.hamburger-react {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
