@@ -1,0 +1,15 @@
+.certificatesContainer {
+    padding-top: 30px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    img {
+        width: 350px;
+    }
+}

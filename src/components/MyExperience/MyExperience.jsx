@@ -1,12 +1,12 @@
-import style from '../UnderNda/UnderNda.module.scss';
+import style from './MyExperience.module.scss';
 
 const MyExperience = () => {
     return (
         <div
-        className={style.ndaContainer}
+            className={style.expContainer}
         >
             <div
-            className={style.ndaInnerContainer}
+                className={style.expInnerContainer}
             >
                 <h3>
                     <a href='https://ligaa.agency/'>Liga A</a>
@@ -43,7 +43,7 @@ const MyExperience = () => {
                 </div>
             </div>
             <div
-            className={style.ndaInnerContainer}
+                className={style.expInnerContainer}
             >
                 <h3>
                     <span>Freelancer</span>
@@ -65,7 +65,7 @@ const MyExperience = () => {
                 </div>
             </div>
             <div
-            className={style.ndaInnerContainer}
+                className={style.expInnerContainer}
             >
                 <h3>
                     <a href='https://htmlacademy.ru/'>HTML Academy</a>
