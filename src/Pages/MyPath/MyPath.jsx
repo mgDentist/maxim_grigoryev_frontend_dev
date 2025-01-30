@@ -1,5 +1,6 @@
 import MyExperience from "../../components/MyExperience/MyExperience";
 
+import './MyPath.scss';
 
 const MyPath = () => {
     return (
