@@ -56,6 +56,14 @@
     height: 200px;
     overflow: hidden;
     border-radius: 15px;
+
+    border: 1px solid #61DAFB20;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        border: 1px solid #61DAFB90;
+    }
 }
 
 .projects__stack-wrapper {

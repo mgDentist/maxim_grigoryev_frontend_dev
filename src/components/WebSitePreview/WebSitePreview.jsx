@@ -9,7 +9,7 @@ const WebSitePreview = ({ url, alt, className }) => {
     const [screenshot, setScreenshot] = useState(null);
     const [error, setError] = useState(null);
 
-    const screenShotURL = `https://api.screenshotmachine.com?key=9449e8&url=${url}&dimension=1730x1076&delay=10000`;
+    const screenShotURL = `https://api.screenshotmachine.com?key=9449e8&url=${url}&dimension=1729x1076&delay=10000`;
 
     useEffect(() => {
         const fetchScreenShot = async () => {
