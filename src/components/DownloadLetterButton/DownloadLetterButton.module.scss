@@ -1,0 +1,16 @@
+.downloadBtn {
+    min-width: 145px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 1px solid #61DAFB;
+    color: inherit;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        color: #61DAFB;
+    }
+}

@@ -20,7 +20,7 @@ const Projects = () => {
                     >
                         <Box sx={{ borderBottom: 1, borderColor: 'transparent' }}>
                             <TabList onChange={handleChange} centered>
-                                <Tab label="No NDA projects" value="0"
+                                <Tab label="Not covered by NDA" value="0"
                                     sx={{
                                         color: '#f0f0f0',
                                         border: 'none',
@@ -39,7 +39,7 @@ const Projects = () => {
                                         },
                                     }}
                                 />
-                                <Tab label="Under NDA projects" value="1"
+                                <Tab label="Confidential under NDA" value="1"
                                     sx={{
                                         color: '#f0f0f0',
                                         border: 'none',

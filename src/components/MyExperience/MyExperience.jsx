@@ -1,3 +1,4 @@
+import DownloadLetterButton from '../DownloadLetterButton/DownloadLetterButton';
 import style from './MyExperience.module.scss';
 
 const MyExperience = () => {
@@ -43,6 +44,7 @@ const MyExperience = () => {
                         <li>Creating interactive UI components (sliders, tabs, filtering and sorting, modal windows, and forms with validation and animation)</li>
                     </ul>
                 </div>
+                <DownloadLetterButton />
             </div>
             <div
                 className={style.expInnerContainer}
