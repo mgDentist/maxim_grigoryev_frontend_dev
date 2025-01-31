@@ -5,13 +5,13 @@ const MyCertificates = () => {
         <div className={style.certificatesContainer}>
             <ul>
                 <li>
-                    <img width={350} src='/public/sertificates/sertificate-htmlAcademy.jpg' />
+                    <img width={350} src='my-certificates/certificate-htmlAcademy-frontend.webp' />
                 </li>
                 <li>
-                    <img width={350} src='/public/sertificates/sertificate-htmlAcademy-js_page-0001.jpg' />
+                    <img width={350} src='my-certificates/certificate-htmlAcademy-js.webp' />
                 </li>
                 <li>
-                    <img width={350} src='/public/sertificates/certificate-htmlAcademy-html1_page-0001.jpg' />
+                    <img width={350} src='my-certificates/certificate-htmlAcademy-html1.webp' />
                 </li>
             </ul>
         </div>

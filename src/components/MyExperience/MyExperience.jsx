@@ -15,20 +15,22 @@ const MyExperience = () => {
                 <div>
                     <h4>Remote internship</h4>
                     <ul>
-                        <li>Implemented projects (including commercials projects) according to the company’s technical requirements and quality standards.</li>
+                        <li>Implemented commercials projects according to the company’s technical requirements and quality standards.</li>
                         <li>Collaborating with a team of developers, managers, and testers.</li>
                     </ul>
                 </div>
                 <div>
                     <h4>During this internship, I worked with:</h4>
                     <ul>
-                        <li> HTML, PUG</li>
-                        <li>CSS, SCSS</li>
+                        <li>React, Redux</li>
                         <li>JS (ES5, ES6)</li>
+                        <li>HTML, PUG</li>
+                        <li>CSS, SCSS, Less</li>
                         <li>BEM methodology</li>
-                        <li>Git</li>
+                        <li>Git, GitHub</li>
                         <li>Gulp, Webpack, Vite</li>
                         <li>Figma, Pixso</li>
+                        <li>Pixel Perfect</li>
                         <li>Various plugins and libraries</li>
                     </ul>
                 </div>
