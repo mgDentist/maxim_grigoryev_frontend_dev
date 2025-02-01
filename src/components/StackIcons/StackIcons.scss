@@ -3,6 +3,13 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 11px;
     padding: 20px;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
 
 .icon-item {
@@ -20,6 +27,13 @@
 
     &:hover {
         transform: scale(1.5);
+    }
+
+    img {
+        @media (max-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
     }
 
     a {

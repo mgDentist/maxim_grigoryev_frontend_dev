@@ -28,14 +28,13 @@ const Header = () => {
             <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}
+                size={25}
                 rounded
                 onToggle={toggled => {
                     if (toggled) {
-                        console.log(open)
-                        // open a menu
+                        document.body.style.overflow = "hidden";
                     } else {
-                        // close a menu
-                        console.log(close)
+                        document.body.style.overflow = "auto";
                     }
                 }}
             />

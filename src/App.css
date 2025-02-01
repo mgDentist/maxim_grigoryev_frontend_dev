@@ -58,7 +58,8 @@ ul, ol {
 
 .hamburger-react {
   z-index: 5;
-  @media (min-width: 1024px) {
+
+    @media (min-width: 1024px) {
     display: none;
   }
 }
