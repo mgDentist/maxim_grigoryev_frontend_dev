@@ -17,15 +17,15 @@ const Header = () => {
                     <span className='gradient-text'>developer</span>
                 </div>
             </div>
-            <nav className='nav'>
-                <NavLink to='/'>Main Page</NavLink>
-                <NavLink to='/my_path'>My Path</NavLink>
-                <NavLink to='/projects'>My Projects</NavLink>
-                <NavLink to='/contacts'>Contacts</NavLink>
+            <nav className={`nav ${isOpen ? 'is-open' : ''}`}>
+                <NavLink onClick={() => setOpen()} to='/'>Main Page</NavLink>
+                <NavLink onClick={() => setOpen()} to='/my_path'>My Path</NavLink>
+                <NavLink onClick={() => setOpen()} to='/projects'>My Projects</NavLink>
+                <NavLink onClick={() => setOpen()} to='/contacts'>Contacts</NavLink>
                 {/* <NavLink to='/blog'>Blog</NavLink> */}
             </nav>
 
-            {/* <Hamburger
+            <Hamburger
                 toggled={isOpen}
                 toggle={setOpen}
                 rounded
@@ -38,7 +38,7 @@ const Header = () => {
                         console.log(close)
                     }
                 }}
-            /> */}
+            />
         </header>
     );
 };
