@@ -5,6 +5,19 @@
     flex-wrap: wrap;
     gap: 180px;
 
+    @media (max-width: 1300px) {
+        gap: 100px;
+    }
+
+    @media (max-width: 1170px) {
+        gap: 50px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 80px;
+        min-width: auto;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
@@ -21,12 +34,32 @@
     border-left: 1px solid #61DAFB;
     padding-left: 20px;
 
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+    button {
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
     ul {
         position: relative;
         min-width: 400px;
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @media (max-width: 1124px) {
+            min-width: 300px;
+        }
+
+        @media (max-width: 1024px) {
+            flex-direction: row;
+            justify-content: start;
+            flex-wrap: wrap;
+        }
     }
 
     li {
@@ -38,6 +71,20 @@
 
     a {
         min-width: 80px;
+
+        @media (max-width: 1024px) {
+            background-color: #61DAFB;
+            padding: 10px;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: #61DAFB;
+            }
+
+            &:active {
+                background-color: #61DAFB;
+            }
+        }
     }
 }
 
@@ -47,8 +94,21 @@
         top: -50%;
         right: -195px;
 
+        @media (max-width: 1124px) {
+            top: -10%;
+        }
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+
         img {
             border-radius: 40px;
+
+            @media (max-width: 1124px) {
+                width: 200px;
+                height: auto;
+            }
         }
     }
 
