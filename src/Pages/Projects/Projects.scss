@@ -57,12 +57,14 @@
     overflow: hidden;
     border-radius: 15px;
 
-    border: 1px solid #61DAFB20;
+    border: 1px solid rgb(97, 218, 251, 0.2);
+    box-shadow: 0 0 10px 0 rgba(97, 218, 251, 0.2);
 
     transition: all 0.3s ease-in-out;
 
     &:hover {
-        border: 1px solid #61DAFB90;
+        border: 1px solid rgb(97, 218, 251, 0.4);
+        box-shadow: 0 0 10px 0 rgba(97, 218, 251, 0.5);
     }
 }
 

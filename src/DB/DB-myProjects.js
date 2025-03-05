@@ -1,11 +1,11 @@
 const myProjects = [
     {
-        projectName: 'Maxim Grigorev',
+        projectName: 'MG Frontend Developer',
         projectURL: 'https://maxgrigorev.dev/',
         stack: ['ReactJS', 'Redux', 'JS', 'Adaptive layout', 'SCSS', 'Animation with @keyframe', 'React Transition Group', 'Vite', 'Component-based architecture with BEM methodology', 'Traditional React component structure with BEM CSS', 'React components with scoped BEM styling', 'Pixel Perfect'],
     },
     {
-        projectName: 'Albert Safin',
+        projectName: 'Albert Safin private page',
         projectURL: 'https://albertsafin.com/',
         stack: ['JS', 'HTML', 'SCSS', 'Gulp', ' Images sizes optimization', 'All content images retinization', 'Cursors customization', 'Pixel Perfect'],
     },
