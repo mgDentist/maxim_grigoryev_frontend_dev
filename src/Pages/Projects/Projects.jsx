@@ -19,7 +19,15 @@ const Projects = () => {
                     <TabContext value={value}
                     >
                         <Box sx={{ borderBottom: 1, borderColor: 'transparent' }}>
-                            <TabList onChange={handleChange} centered>
+                            <TabList onChange={handleChange}
+                                centered
+                                sx={{
+                                    '& .MuiTabs-indicator': {
+                                        height: '1px',
+                                        backgroundColor: '#61DAFB',
+                                    },
+                                }}
+                            >
                                 <Tab label="Not covered by NDA" value="0"
                                     sx={{
                                         color: '#f0f0f0',
