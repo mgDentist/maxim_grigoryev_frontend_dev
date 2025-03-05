@@ -1,13 +1,33 @@
 .certificatesContainer {
     padding-top: 30px;
+    margin: 0 auto;
 
     ul {
         display: flex;
         flex-direction: column;
         gap: 100px;
+
+        @media (max-width: 1085px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        @media (max-width: 1024px) {
+            gap: 50px;
+        }
+
+        @media (max-width: 768px) {
+            gap: 20px;
+        }
     }
 
     img {
         width: 350px;
+
+        @media (max-width: 1024px) {
+            width: 300px;
+        }
     }
 }
