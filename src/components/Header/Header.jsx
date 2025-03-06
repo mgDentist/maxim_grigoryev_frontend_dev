@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
 import logo from '../../assets/logoMG.svg';
@@ -7,6 +7,14 @@ import './Header.scss';
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false)
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isOpen]);
 
     return (
         <header className='header'>
@@ -18,10 +26,10 @@ const Header = () => {
                 </div>
             </div>
             <nav className={`nav ${isOpen ? 'is-open' : ''}`}>
-                <NavLink onClick={() => setOpen()} to='/'>Main Page</NavLink>
-                <NavLink onClick={() => setOpen()} to='/my_path'>My Path</NavLink>
-                <NavLink onClick={() => setOpen()} to='/projects'>My Projects</NavLink>
-                <NavLink onClick={() => setOpen()} to='/contacts'>Contacts</NavLink>
+                <NavLink onClick={() => setOpen(false)} to='/'>Main Page</NavLink>
+                <NavLink onClick={() => setOpen(false)} to='/my_path'>My Path</NavLink>
+                <NavLink onClick={() => setOpen(false)} to='/projects'>My Projects</NavLink>
+                <NavLink onClick={() => setOpen(false)} to='/contacts'>Contacts</NavLink>
                 {/* <NavLink to='/blog'>Blog</NavLink> */}
             </nav>
 
@@ -30,13 +38,6 @@ const Header = () => {
                 toggle={setOpen}
                 size={25}
                 rounded
-                onToggle={toggled => {
-                    if (toggled) {
-                        document.body.style.overflow = "hidden";
-                    } else {
-                        document.body.style.overflow = "auto";
-                    }
-                }}
             />
         </header>
     );
