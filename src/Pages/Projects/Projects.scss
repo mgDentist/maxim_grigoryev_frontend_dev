@@ -7,7 +7,11 @@
     padding: 25px 55px 100px;
 
     @media (max-width: 1024px) {
-        padding: 25px 25px 100px;
+        padding: 25px 25px 25px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 25px 15px 25px;
     }
 
     h2 {
@@ -93,6 +97,16 @@
 .projects__tech {
     position: relative;
     padding-left: 16px;
+
+    p {
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
 
     &::before {
         content: '';

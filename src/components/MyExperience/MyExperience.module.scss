@@ -42,15 +42,23 @@
 }
 
 .expInnerContainer {
-    padding: 45px 0 0 50px;
+    padding: 0 0 45px 0;
     position: relative;
+
+    @media (max-width: 1024px) {
+        padding: 0 0 45px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 0 45px 0;
+    }
 
     &:not(:last-child):after {
         content: "";
         position: absolute;
         width: 100%;
         height: 1px;
-        bottom: -30px;
+        bottom: 15px;
         background: linear-gradient(45deg, #61DAFB 0%, #61DAFB 50%, #f0f0f0 100%);
     }
 

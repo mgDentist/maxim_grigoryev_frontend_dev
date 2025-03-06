@@ -41,36 +41,36 @@ const ExpTimer = () => {
                 <ul className="timer-numbers">
                     <li className="timer-numbers__item timer-numbers__item--years">
                         <p>{elapsedTime.years < 10 ? `0${elapsedTime.years}` : elapsedTime.years}</p>
-                        <span>{elapsedTime.years < 2 ? 'year' : 'years'}</span>
+                        <span>{elapsedTime.years === 1 ? 'year' : 'years'}</span>
                     </li>
                     <li className="timer-numbers__item timer-numbers__item--months">
                         <p>{elapsedTime.months < 10 ? `0${elapsedTime.months}` : elapsedTime.months}</p>
-                        <span>{elapsedTime.months < 2 ? 'month' : 'months'}</span>
+                        <span>{elapsedTime.months === 1 ? 'month' : 'months'}</span>
                     </li>
                     <li className="timer-numbers__item timer-numbers__item--days">
                         <p>{elapsedTime.days < 10 ? `0${elapsedTime.days}` : elapsedTime.days}</p>
-                        <span>{elapsedTime.days < 2 ? 'day' : 'days'}</span>
+                        <span>{elapsedTime.days === 1 ? 'day' : 'days'}</span>
                     </li>
                 </ul>
 
                 <ul className="timer-numbers timer-numbers__little">
                     <li className="timer-numbers__item timer-numbers__item--hours">
                         <p>{elapsedTime.hours < 10 ? `0${elapsedTime.hours}` : elapsedTime.hours}</p>
-                        <span>{elapsedTime.hours < 2 ? 'hour' : 'hours'}</span>
+                        <span>{elapsedTime.hours === 1 ? 'hour' : 'hours'}</span>
                     </li>
-                    <li className="timer-numbers__item timer-numbers__item--dots">
+                    <li className="timer-numbers__item timer-numbers__item--dots timer-numbers__item--dots-1">
                         <DoubleDots className={`timer-numbers__dots ${isUpdated ? 'updated' : ''}`} />
                     </li>
                     <li className="timer-numbers__item timer-numbers__item--minutes">
                         <p>{elapsedTime.minutes < 10 ? `0${elapsedTime.minutes}` : elapsedTime.minutes}</p>
-                        <span>{elapsedTime.minutes < 2 ? 'minute' : 'minutes'}</span>
+                        <span>{elapsedTime.minutes === 1 ? 'minute' : 'minutes'}</span>
                     </li>
-                    <li className="timer-numbers__item timer-numbers__item--dots">
+                    <li className="timer-numbers__item timer-numbers__item--dots timer-numbers__item--dots-2">
                         <DoubleDots className={`timer-numbers__dots ${isUpdated ? 'updated' : ''}`} />
                     </li>
                     <li className="timer-numbers__item timer-numbers__item--seconds">
                         <p>{elapsedTime.seconds < 10 ? `0${elapsedTime.seconds}` : elapsedTime.seconds}</p>
-                        <span>{elapsedTime.seconds < 2 ? 'second' : 'seconds'}</span>
+                        <span>{elapsedTime.seconds === 1 ? 'second' : 'seconds'}</span>
                     </li>
                 </ul>
             </div>
