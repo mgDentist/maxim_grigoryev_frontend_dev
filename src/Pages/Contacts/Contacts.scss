@@ -5,6 +5,14 @@
     justify-content: start;
     align-items: start;
     padding: 50px 55px 100px;
+
+    @media (max-width: 1024px) {
+        padding: 50px 25px 50px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 50px 15px 50px;
+    }
 }
 
 .contacts__container {
