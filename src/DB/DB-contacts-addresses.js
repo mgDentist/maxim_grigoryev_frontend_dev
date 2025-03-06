@@ -1,5 +1,6 @@
 const contactsAddresses = [
     { key: 'name', label: 'Name', description: 'Maxim Grigoryev', },
+    { key: 'languages', label: 'My languages', description: 'English 🇬🇧 | Russian 🇷🇺 | Spanish 🇪🇸'},
     { key: 'location', label: 'Current location', description: 'Phuket, Thailand (TH) 🇹🇭', },
     { key: 'timeZone', label: 'Time zone', description: 'GMT+7', },
     { key: 'email', label: 'E-mail', description: 'maxgrigorev.front@gmail.com', },
