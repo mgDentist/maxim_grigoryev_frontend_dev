@@ -57,6 +57,10 @@
     }
 
     button {
+        &:focus {
+            outline: 1px solid #61DAFB;
+        }
+
         @media (max-width: 1024px) {
             display: none;
         }
