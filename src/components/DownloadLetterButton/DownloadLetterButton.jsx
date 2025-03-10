@@ -4,7 +4,7 @@ import style from './DownloadLetterButton.module.scss';
 const DownloadLetterButton = () => {
     const handleDownloadEnglish = () => {
         const fileUrl = 'my-certificates/reference-letter-maxim-grigoryev-en.pdf';
-        saveAs(fileUrl, 'reference-letter-maxim-grigoryev-eng.pdf');
+        saveAs(fileUrl, 'reference-letter-maxim-grigoryev-en.pdf');
     };
 
     const handleDownloadRussian = () => {
