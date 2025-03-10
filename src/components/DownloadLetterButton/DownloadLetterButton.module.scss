@@ -1,5 +1,5 @@
 .downloadBtn {
-    min-width: 145px;
+    // min-width: 145px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +9,18 @@
     color: inherit;
     transition: all 0.3s ease;
 
+    @media (min-width: 581px) {
+        min-width: 380px;
+    }
+
+    @media (max-width: 580px) {
+        width: 280px;
+    }
+    
+
     &:hover,
     &:focus {
         color: #61DAFB;
+        outline: none;
     }
 }

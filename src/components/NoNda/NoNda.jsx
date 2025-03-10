@@ -27,7 +27,8 @@ const NoNda = () => {
                     const isExpanded = expandedProjects[project.projectName] || false;
 
                     return (
-                        <li className="projects__item" key={project.projectName}>
+                        <li className="projects__item"
+                            key={project.projectName}>
                             <h4 className="projects__description">{project.projectName}</h4>
                             <div className="projects__stack-wrapper">
                                 <div>
