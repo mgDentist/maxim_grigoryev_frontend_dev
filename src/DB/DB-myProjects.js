@@ -10,6 +10,11 @@ const myProjects = [
         stack: ['JS', 'HTML', 'SCSS', 'Gulp', ' Images sizes optimization', 'All content images retinization', 'Cursors customization', 'Pixel Perfect'],
     },
     {
+        projectName: 'Dive Sea promo page',
+        projectURL: 'https://dive-sea-nuq1.vercel.app/',
+        stack: ['React', 'Semantic layout', 'SCSS', 'Webpack', 'Animations - @keyframe', 'Images sizes optimization', 'All content images retinization', 'Ultra wide desktops supported (2K, 4K)', 'Pixel Perfect'],
+    },
+    {
         projectName: 'Pretty Paw',
         projectURL: 'https://pretty-paw-eight.vercel.app/index.html',
         stack: ['JS', 'CSS in JS', 'BEM', 'DOM manipulation', 'WebPack', 'GSAP', 'Figma', 'Mobile First', 'Pixel Perfect'],
