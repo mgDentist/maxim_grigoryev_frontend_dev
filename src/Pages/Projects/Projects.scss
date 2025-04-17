@@ -64,6 +64,8 @@
 }
 
 .projects__img-container {
+    min-width: 400px;
+    min-height: 200px;
     max-width: 400px;
     max-height: 200px;
     overflow: hidden;
@@ -78,13 +80,23 @@
         border: 1px solid rgb(97, 218, 251, 0.4);
         box-shadow: 0 0 10px 0 rgba(97, 218, 251, 0.5);
     }
+
+    @media (max-width: 768px) {
+        min-width: 288px;
+        min-height: auto;
+    }
+
+    @media (max-width: 480px) {
+        min-width: 100%;
+        min-height: auto;
+    }
 }
 
 .projects__stack-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 25px;
+    gap: 20px;
 
     >div {
         width: 300px;
