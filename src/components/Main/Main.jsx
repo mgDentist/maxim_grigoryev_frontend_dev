@@ -1,7 +1,7 @@
 import StackIcons from '../StackIcons/StackIcons';
 import ExpTimer from '../ExpTimer/ExpTimer';
 
-import maxLogo from '../../assets/MG-avatar.jpg';
+import maxLogo from '../../assets/MG-avatar.webp';
 import './Main.scss';
 
 const Main = () => {
@@ -15,7 +15,14 @@ const Main = () => {
                     height='200'
                     alt='Content author Maxim Grigoryev'
                 />
-                <p>Hello! I’m Maxim Grigoryev, a frontend developer specializing in React. My goal is to create modern, fast, and intuitive user interfaces. I transform complex challenges into elegant solutions, making web applications not just functional, but impressive. With a focus on crafting seamless user experiences, I’m ready to apply my skills to bring your project to life!</p>
+                <div className='main__text'>
+                    <p>
+                        Hi, I’m Maksim Grigorev — a frontend developer focused on clean, scalable, and responsive React interfaces. I turn Figma designs into pixel-perfect, maintainable components using React, Tailwind CSS / Styled Components, and Vite.
+                    </p>
+                    <p>
+                        I care about accessibility, performance, and developer experience. From landing pages to full SPAs, I deliver consistent quality and support projects after launch — helping teams move faster without compromising on code or design.
+                    </p>
+                </div>
                 <StackIcons />
             </div>
             <ExpTimer />
