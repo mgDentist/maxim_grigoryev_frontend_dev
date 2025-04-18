@@ -36,6 +36,7 @@
     "sass-embedded": "^1.80.2",
     "vite": "^5.4.8",
     "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-sitemap": "^0.7.1",
     "vite-plugin-static-copy": "^2.3.0"
   }
 }
