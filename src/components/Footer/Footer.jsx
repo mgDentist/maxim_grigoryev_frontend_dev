@@ -5,7 +5,7 @@ import './Footer.scss';
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>Copyright © 2024 Maxim Grigoryev</p>
+            <p>Copyright © 2024 Maksim Grigorev</p>
             <p>Coded with ❤️ by MG</p>
             <LinksFooter />
         </footer>
