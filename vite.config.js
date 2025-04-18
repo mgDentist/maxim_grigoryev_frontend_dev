@@ -9,6 +9,10 @@ export default defineConfig({
       {
         src: '.htaccess',
         dest: ''
+      },
+      {
+        src: 'robots.txt',
+        dest: ''
       }
     ]
   })
