@@ -27,7 +27,6 @@ const ContactAddress = () => {
                                 rel="noopener noreferrer"
                             >{item.description}</a> :
                             <span>{item.description}</span>}
-
                     </li>
                 ))}
             </ul>
