@@ -1,0 +1,33 @@
+.scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #61DAFB;
+    color: #242424;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(20px);
+    z-index: 1000;
+
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &:hover {
+        background-color: darken(#61DAFB, 10%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
