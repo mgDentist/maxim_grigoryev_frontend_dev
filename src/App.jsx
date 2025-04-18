@@ -8,7 +8,7 @@ import Contacts from './Pages/Contacts/Contacts';
 import MyPath from './Pages/MyPath/MyPath';
 // import Blog from './Pages/Blog/Blog';
 import NotFound from './Pages/NotFound/NotFound';
-
+import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
 import './App.css'
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
+      <ScrollToTopButton /> 
     </div>
   )
 }

@@ -70,7 +70,7 @@ const Projects = () => {
                                             fontSize: '0.7rem',
                                         },
                                         whiteSpace: 'normal',
-                                        overflowWrap: 'break-word', 
+                                        overflowWrap: 'break-word',
                                         wordBreak: 'break-word',
                                     }}
                                 />
@@ -105,7 +105,7 @@ const Projects = () => {
                                             fontSize: '0.7rem',
                                         },
                                         whiteSpace: 'normal',
-                                        overflowWrap: 'break-word', 
+                                        overflowWrap: 'break-word',
                                         wordBreak: 'break-word',
                                     }}
                                 />

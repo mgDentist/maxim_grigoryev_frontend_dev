@@ -1,6 +1,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -47,6 +48,7 @@ ul, ol {
 }
 
 .container {
+  position: relative;
   min-height: 100%;
   display: flex;
   flex-direction: column;

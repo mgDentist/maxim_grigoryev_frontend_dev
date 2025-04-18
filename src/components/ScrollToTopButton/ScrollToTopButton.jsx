@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './ScrollToTopButton.scss';
 
 const ScrollToTopButton = () => {
     const SCROLL_THRESHOLD = 250;
