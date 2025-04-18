@@ -29,7 +29,7 @@ const NoNda = () => {
                     return (
                         <li className="projects__item"
                             key={project.projectName}>
-                            <h4 className="projects__description">{project.projectName}</h4>
+                            <h3 className="projects__description">{project.projectName}</h3>
                             <div className="projects__stack-wrapper">
                                 <div>
                                     {/* Анимация списка технологий */}
