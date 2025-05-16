@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Squash as Hamburger } from 'hamburger-react'
-import logo from '../../assets/logoMG.svg';
+// import logo from '../../assets/logoMG.svg';
 
 import './Header.scss';
 
@@ -19,7 +19,13 @@ const Header = () => {
     return (
         <header className='header'>
             <div className='logo-wrapper'>
-                <img width="100" height="100" src={logo} alt="Logo MG"></img>
+                {/* <div className='img-wrapper'>
+                    <img width="100" height="100" src={logo} alt="Logo MG" />
+                </div> */}
+                <div className='letters'>
+                    <span className='letter letter-1'>M</span>
+                    <span className='letter letter-2'>G</span>
+                </div>
                 <div className='text-logo-wrapper'>
                     <span className='gradient-text'>frontend</span>
                     <span className='gradient-text'>developer</span>
