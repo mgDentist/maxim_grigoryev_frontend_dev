@@ -5,7 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 import './StackIcons.scss';
 
-const StackIcons = () => {
+const StackIcons = ({ className }) => {
     const [visibleIcons, setVisibleIcons] = useState([]);
     const [remainingIcons, setRemainingIcons] = useState([...StackIconsDB]); // Копия всех иконок
     const ICONS_INTERVAL = 100; // Интервал между иконками (мс)
@@ -24,7 +24,7 @@ const StackIcons = () => {
 
                 // Рекурсивно запускаем показ следующей иконки
                 showRandomIcon();
-            }, ICONS_INTERVAL); 
+            }, ICONS_INTERVAL);
         };
 
         showRandomIcon(); // Запускаем первую итерацию
@@ -35,7 +35,7 @@ const StackIcons = () => {
     }, []);
 
     return (
-        <ul className="stack-icons-container">
+        <ul className={`${className} stack-icons-container`}>
             {StackIconsDB.map((icon) => (
                 <li
                     key={icon.name}

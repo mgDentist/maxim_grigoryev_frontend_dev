@@ -23,7 +23,7 @@ const Main = () => {
                         I care about accessibility, performance, and developer experience. From landing pages to full SPAs, I deliver consistent quality and support projects after launch — helping teams move faster without compromising on code or design.
                     </p>
                 </div>
-                <StackIcons />
+                <StackIcons className='main__icons' />
             </div>
             <ExpTimer />
         </section>
