@@ -1,18 +1,18 @@
 const myProjects = [
     {
         projectName: 'MINECRAFT Web Client',
-        projectURL: 'https://github.com/mgDentist/minecraft-web-client',
-        stack: ['ROLE: React UI & Core Developer Maintainer', 'Open Source', 'ReactJS', 'TypeScript', 'RSbuild', 'Adaptive layout', 'CSS', 'Animation with Framer Motion'],
-    },
-    {
-        projectName: 'MG Frontend Developer',
-        projectURL: 'https://maxgrigorev.dev/',
-        stack: ['ReactJS', 'Redux', 'JS', 'Adaptive layout', 'SCSS', 'Animation with @keyframe', 'React Transition Group', 'Vite', 'Component-based architecture with BEM methodology', 'Traditional React component structure with BEM CSS', 'React components with scoped BEM styling', 'Pixel Perfect'],
+        projectURL: 'https://mcraft.fun/',
+        stack: ['ROLE: React UI & Core Developer Maintainer', 'ReactJS', 'TypeScript', 'RSbuild', 'Adaptive layout', 'CSS', 'Animation with Framer Motion'],
     },
     {
         projectName: 'Albert Safin',
         projectURL: 'https://albertsafin.com/',
         stack: ['JS', 'HTML', 'SCSS', 'Gulp', ' Images sizes optimization', 'All content images retinization', 'Cursors customization', 'Pixel Perfect'],
+    },
+     {
+        projectName: 'MG Frontend Developer',
+        projectURL: 'https://maxgrigorev.dev/',
+        stack: ['ReactJS', 'Redux', 'JS', 'Adaptive layout', 'SCSS', 'Animation with @keyframe', 'React Transition Group', 'Vite', 'Component-based architecture with BEM methodology', 'Traditional React component structure with BEM CSS', 'React components with scoped BEM styling', 'Pixel Perfect'],
     },
     {
         projectName: 'Dive Sea',
